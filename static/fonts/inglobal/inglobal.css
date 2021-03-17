@@ -1,0 +1,12 @@
+@font-face {
+    font-family: inglobal;
+    src: url('/static/fonts/inglobal/inglobal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: inglobal;
+    src: url('/static/fonts/inglobal/inglobalb.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

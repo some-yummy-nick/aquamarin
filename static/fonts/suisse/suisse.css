@@ -1,0 +1,18 @@
+@font-face {
+  font-family: suisse;
+  src: url('/static/fonts/suisse/SuisseIntl-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: suisse;
+  src: url('/static/fonts/suisse/SuisseIntl-Medium.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: suisse;
+  src: url('/static/fonts/suisse/SuisseIntl-Bold.otf');
+  font-weight: 600;
+  font-style: normal;
+}

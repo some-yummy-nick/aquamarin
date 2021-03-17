@@ -1,0 +1,18 @@
+@font-face {
+  font-family: cera;
+  src: url('/static/fonts/cera-pro/CeraPro-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: cera;
+  src: url('/static/fonts/cera-pro/CeraPro-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: cera;
+  src: url('/static/fonts/cera-pro/CeraPro-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}

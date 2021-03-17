@@ -1,0 +1,10 @@
+node_modules
+.next
+deployment.xml
+misc.xml
+modules.xml
+uni-vesna2.iml
+vcs.xml
+workspace.xml
+inspectionProfiles
+.idea

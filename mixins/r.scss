@@ -1,0 +1,196 @@
+$rem-baseline: 16px !default;
+$rem-fallback: false !default;
+$rem-px-only: false !default;
+
+@function rem-separator($list, $separator: false) {
+  @if $separator=='comma'or $separator=='space' {
+    @return append($list, null, $separator);
+  }
+
+  @if function-exists('list-separator')==true {
+    @return list-separator($list);
+  }
+
+  // list-separator polyfill by Hugo Giraudel (https://sass-compatibility.github.io/#list_separator_function)
+  $test-list: ();
+
+  @each $item in $list {
+    $test-list: append($test-list, $item, space);
+  }
+
+  @return if($test-list==$list, space, comma);
+}
+
+@mixin rem-baseline($zoom: 100%) {
+  font-size: $zoom / 16px * $rem-baseline;
+}
+
+@function rem-convert($to, $values...) {
+  $result: ();
+  $separator: rem-separator($values);
+
+  @each $value in $values {
+    @if type-of($value)=='number'and unit($value)=='rem'and $to=='px' {
+      $result: append($result, $value / 1rem * $rem-baseline, $separator);
+    }
+
+    @else if type-of($value)=='number'and unit($value)=='px'and $to=='rem'
+
+      {
+      $result: append($result, $value / $rem-baseline * 1rem, $separator);
+    }
+
+    @else if type-of($value)=='list' {
+      $value-separator: rem-separator($value);
+      $value: rem-convert($to, $value...);
+      $value: rem-separator($value, $value-separator);
+      $result: append($result, $value, $separator);
+    }
+
+    @else {
+      $result: append($result, $value, $separator);
+    }
+  }
+
+  @return if(length($result)==1, nth($result, 1), $result);
+}
+
+@function rem($values...) {
+  @if $rem-px-only {
+    @return rem-convert(px, $values...);
+  }
+
+  @else {
+    @return rem-convert(rem, $values...);
+  }
+}
+
+@mixin rem($properties, $values...) {
+  @if type-of($properties)=='map' {
+    @each $property in map-keys($properties) {
+      @include rem($property, map-get($properties, $property));
+    }
+  }
+
+  @else {
+    @each $property in $properties {
+      @if $rem-fallback or $rem-px-only {
+        #{$property}: rem-convert(px, $values...);
+      }
+
+      @if not $rem-px-only {
+        #{$property}: rem-convert(rem, $values...);
+      }
+    }
+  }
+}
+
+@mixin r($point) {
+  @if $point==240 {
+    @media (min-width: 240px) {
+      @content;
+    }
+  }
+
+  @if $point==320 {
+    @media (min-width: 320px) {
+      @content;
+    }
+  }
+
+  @if $point==480 {
+    @media (min-width: 480px) {
+      @content;
+    }
+  }
+
+  @if $point==600 {
+    @media (min-width: 600px) {
+      @content;
+    }
+  }
+
+  @if $point==768 {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $point==1024 {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+
+  @if $point==1140 {
+    @media (min-width: 1140px) {
+      @content;
+    }
+  }
+
+  @if $point==1280 {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  }
+
+  @if $point==1300 {
+    @media (min-width: 1300px) {
+      @content;
+    }
+  }
+
+  @if $point==1400 {
+    @media (min-width: 1400px) {
+      @content;
+    }
+  }
+
+  @if $point==1500 {
+    @media (min-width: 1500px) {
+      @content;
+    }
+  }
+
+  @if $point==1600 {
+    @media (min-width: 1600px) {
+      @content;
+    }
+  }
+
+  @if $point==1700 {
+    @media (min-width: 1700px) {
+      @content;
+    }
+  }
+
+  @if $point==1800 {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}
+
+%abs-container {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+%fix-container {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+}
+
+%center {
+  top: 50%;
+  right: 50%;
+  position: fixed;
+  transform: translate(-50%,-50%);
+
+}

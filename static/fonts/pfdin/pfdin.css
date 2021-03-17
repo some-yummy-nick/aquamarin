@@ -1,0 +1,18 @@
+@font-face {
+  font-family: pfdin;
+  src: url('/static/fonts/pfdin/PFDinTextCondPro-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: pfdin;
+  src: url('/static/fonts/pfdin/PFDinTextCondPro-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: pfdin;
+  src: url('/static/fonts/pfdin/PFDinTextCondPro-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
