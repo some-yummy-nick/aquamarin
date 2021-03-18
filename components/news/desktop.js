@@ -60,6 +60,18 @@ const Item = props => {
           padding-left: 20px;
           padding-right: 40px;
         }
+        
+         @media (max-width: 767px) {
+           .news{
+             flex-direction:column
+            }
+            
+            .news-body {
+          padding-left: 0;
+          padding-right: 0;
+          margin-top:20px;
+        }
+          }
       `}</style>
     </div>
   )

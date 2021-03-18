@@ -65,7 +65,7 @@
         "dev": "node server.js",
         "build": "next build",
         "export": "next export",
-        "start": "next start"
+        "start": "NODE_ENV=production node server.js"
     },
     "author": "atmosfera",
     "license": "ISC",

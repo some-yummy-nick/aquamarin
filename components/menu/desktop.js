@@ -14,7 +14,7 @@ const xOffset = 100
 const yOffset = 100
 
 const MenuDesktop = props => {
-  let logo = 'logo-dark'
+  let logo = 'logo-new'
 
   const theme = props.theme
   const transparent = theme === 'transparent'
@@ -86,7 +86,7 @@ const MenuDesktop = props => {
         <div className="logo-wrap" onClick={closeMenu}>
           <Link route="main">
             <a>
-              <img src={`/static/branding/${logo}.svg`} height="75" />
+              <img src={`/static/branding/${logo}.svg`} height="40" width="190" />
             </a>
           </Link>
         </div>
@@ -127,7 +127,7 @@ const MenuDesktop = props => {
       <style jsx>{`
         .menu {
           height: 90px;
-          background: white;
+          background: #F9F9F9;
           padding: 0 50px 0 50px;
           transform: translateZ(0);
           &.dark {
@@ -167,7 +167,7 @@ const MenuDesktop = props => {
           background: var(--color7);
         }
         .split-button {
-          color: #ff4646;
+          color: #fff;
           font-size: 14px;
           font-weight: 500;
           text-transform: uppercase;
@@ -183,8 +183,12 @@ const MenuDesktop = props => {
             }
             .split-button-lft,
             .split-button-rgt {
+              background: var(--color1-dark);
               opacity: 1;
               transition-delay: 0.2s;
+               &:hover {
+            background-color: #A6CE38;
+          }
             }
             .split-button-divider {
               opacity: 1;
@@ -196,8 +200,7 @@ const MenuDesktop = props => {
         .split-button-rgt {
           height: 40px;
           box-sizing: border-box;
-          border-radius: 40px;
-          border: solid 2px #ff4646;
+          border-radius: 4px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -205,6 +208,7 @@ const MenuDesktop = props => {
           white-space: nowrap;
         }
         .split-button-base {
+          background: var(--color1-dark);
           top: 0;
           left: 50%;
           width: 180px;
@@ -225,9 +229,7 @@ const MenuDesktop = props => {
           opacity: 0;
           transition: opacity 0.2s;
           border-color: transparent;
-          &:hover {
-            color: var(--color1);
-          }
+         
         }
         .split-button-lft {
           border-right: 0;

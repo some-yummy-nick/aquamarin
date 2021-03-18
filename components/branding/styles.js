@@ -8,7 +8,7 @@ export default () => (
     :root {
       /* Colors */
       --color1:       /**/ #ff8200;
-      --color1-dark:  /**/ #ff4646;
+      --color1-dark:  /**/ #00A9A4;
 
       --color2:       /**/ #f2a890;
       --color3:       /**/ #4abb62;

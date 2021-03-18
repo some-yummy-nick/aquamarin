@@ -13,9 +13,9 @@ const MenuPhablet = props => {
   const theme = props.theme
   const transparent = theme === 'transparent'
 
-  let logo = 'logo-dark'
+  let logo = 'logo-new'
   if (transparent && !menuOpened) {
-    logo = 'logo-white'
+    logo = 'logo-new'
   }
 
   return (

@@ -113,6 +113,13 @@ const Show = ({ news }) => {
           .news-body .news-image {
             max-width: 424px;
           }
+          
+           @media (max-width: 1600px) {
+           .news-body{
+             flex-wrap:wrap;
+            justify-content: center;
+            }
+          }
         `}</style>
       </Content>
     </Page>

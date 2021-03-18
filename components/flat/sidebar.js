@@ -40,7 +40,7 @@ const FlatSidebar = ({
                     )}
                   </Spacer>
                   {costShown && flat.apartment_cost && (
-                    <Spacer tSpace={40} bSpace={20}>
+                    <Spacer tSpace={40} bSpace={20}>k
                       <Label>Стоимость, руб.</Label>
                       <FlatPrice price={flat.apartment_cost} />
                     </Spacer>
