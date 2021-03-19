@@ -78,7 +78,7 @@ const DesktopSwitch = ({ onClick, controls, color, bottomBorder = true }) => {
           background: currentColor;
         }
         .selected :global(h1) {
-          color: #aac800;
+          color:  var(--color1-dark);
         }
         .palochka {
           content: '';
@@ -87,7 +87,7 @@ const DesktopSwitch = ({ onClick, controls, color, bottomBorder = true }) => {
           height: 0px;
           bottom: 0;
           transform: translateZ(0);
-          border-bottom: solid 4px #aac800;
+          border-bottom: solid 4px   var(--color1-dark);
           .bottom-border & {
             bottom: -1px;
           }

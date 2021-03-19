@@ -157,10 +157,9 @@ class FlatGallery extends Component {
             }}
           >
             {/* prettier-ignore */}
-            <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle r="28.5" transform="matrix(-1 0 0 1 29 29)" fill="currentColor" fillOpacity="0.2" stroke="#AAC800"/>
-              <rect width="1.79763" height="12.4458" rx="0.898813" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 30.0001 37.9999)" fill="white"/>
-              <rect width="1.79763" height="12.4458" rx="0.898813" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 31.2711 21.6702)" fill="white"/>
+            <svg width="21" height="37" viewBox="0 0 21 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2.12158" y="16.2139" width="26.038" height="3" rx="1.5" transform="rotate(45 2.12158 16.2139)" fill="#A6CE38"/>
+              <rect width="25.9546" height="3" rx="1.5" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 2.12158 20.4741)" fill="#A6CE38"/>
             </svg>
           </div>
           <div
@@ -173,10 +172,9 @@ class FlatGallery extends Component {
             }}
           >
             {/* prettier-ignore */}
-            <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="29" cy="29" r="28.5" fill="currentColor" fillOpacity="0.2" stroke="#AAC800"/>
-              <rect x="28" y="37.9999" width="1.79763" height="12.4458" rx="0.898813" transform="rotate(-135 28 37.9999)" fill="white"/>
-              <rect x="26.7285" y="21.6702" width="1.79763" height="12.4458" rx="0.898813" transform="rotate(-45 26.7285 21.6702)" fill="white"/>
+            <svg width="21" height="37" viewBox="0 0 21 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="26.038" height="3" rx="1.5" transform="matrix(-0.707107 0.707107 0.707107 0.707107 18.4121 16.2139)" fill="#4E4B4B"/>
+              <rect x="18.4121" y="20.4741" width="25.9546" height="3" rx="1.5" transform="rotate(-135 18.4121 20.4741)" fill="#4E4B4B"/>
             </svg>
           </div>
         </div>{' '}
@@ -206,7 +204,7 @@ class FlatGallery extends Component {
             cursor: pointer;
             box-sizing: border-box;
             position: relative;
-            border: solid 2px transparent;
+            border: solid 2px rgba(#00A9A4,0.1);
             img {
               top: 0;
               left: 0;
@@ -221,9 +219,11 @@ class FlatGallery extends Component {
           }
           .thumbnail:hover {
             opacity: 1;
+            
           }
           .thumbnail.swiper-slide-active {
             opacity: 1;
+            border-color: #00A9A4;
           }
           .thumbnails {
             left: 0;
@@ -295,7 +295,7 @@ class FlatGallery extends Component {
               color: var(--color9);
             }
             &:hover:not(.disabled) rect {
-              fill: white;
+              fill: #000;
             }
             &:hover:not(.disabled) circle {
               fill-opacity: 1;

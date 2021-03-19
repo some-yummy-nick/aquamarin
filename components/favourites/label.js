@@ -21,7 +21,7 @@ const Label = props => (
         color: #646464;
         border-bottom: solid 1px #e7e7e7;
         &.even {
-          //background: #fafafa;
+           background: #F9F9F9;
         }
       }
     `}</style>

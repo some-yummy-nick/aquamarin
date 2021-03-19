@@ -37,7 +37,7 @@ const Toggle = ({ on = false, onToggle, onOn, onOff, onText, offText }) => {
           border-radius: 50%;
           position: absolute;
           transition: all 0.25s;
-          background: var(--color9);
+          background: var(--color1-dark);
         }
         .label {
           cursor: pointer;

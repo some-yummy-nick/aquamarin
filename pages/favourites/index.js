@@ -275,6 +275,9 @@ class Favourites extends React.Component {
                     max-width: 280px;
                     position: relative;
                     box-sizing: border-box;
+                    
+                    &>div{
+                    }
                   }
                   .col-wrap {
                     top: 0;
@@ -372,9 +375,11 @@ class Favourites extends React.Component {
                   .label-key {
                     color: #000;
                   }
+                  
+                  
                   .square {
-                    color: var(--color1);
-                    font-size: 24px;
+                    color: var(--color9);
+                    font-size: 20px;
                     font-weight: 500;
                   }
                 `}</style>

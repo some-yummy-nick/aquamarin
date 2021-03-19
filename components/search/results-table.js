@@ -280,7 +280,7 @@ class ResultsTable extends React.Component {
               tr {
               }
               tr:hover td {
-                background: #fffbf6;
+                background: rgba(#A6CE38,0.2);
               }
               table thead tr:nth-child(1) th {
                 top: 0;

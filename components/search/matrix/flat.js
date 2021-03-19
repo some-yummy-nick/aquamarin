@@ -28,8 +28,8 @@ const Flat = ({ rooms_count, sold_status, ...props }) => {
           background: white;
           cursor: pointer;
           &:hover {
-            backgrund: white;
-            border-color: var(--color9);
+            background:  var(--color9);
+            color: white;
           }
         }
         .sale {
@@ -39,7 +39,8 @@ const Flat = ({ rooms_count, sold_status, ...props }) => {
           background: #e2e2e2;
         }
         .reserved {
-          background: var(--color2);
+          background: var(--color1);
+          color: white;
         }
       `}</style>
     </div>

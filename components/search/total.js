@@ -28,7 +28,7 @@ export default props => (
       .suf {
         font-size: 20px;
         font-weight: 500;
-        color: var(--color1);
+        color: var(--color9);
         display: inline-block;
       }
       .suf {

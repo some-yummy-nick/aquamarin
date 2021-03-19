@@ -10,7 +10,7 @@ export default {
       case this.sold:
         return '#646464'
       case this.reserved:
-        return '#FF4646'
+        return '#F7931D'
     }
   },
 

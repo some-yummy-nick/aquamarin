@@ -320,7 +320,7 @@ const Scheme = ({
           font-weight: 500;
         }
         .highlight {
-          color: var(--color1);
+          color: var(--color1-dark);
         }
         .highlight .comment {
         }

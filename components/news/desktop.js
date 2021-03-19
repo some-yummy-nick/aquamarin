@@ -29,6 +29,7 @@ const Item = props => {
           height: 100%;
           cursor: pointer;
           box-sizing: border-box;
+          background:#F9F9F9;
           &:hover {
             background: #fafafa;
           }
@@ -36,7 +37,7 @@ const Item = props => {
         .date {
           font-weight: 400;
           font-size: 14px;
-          color: var(--color9);
+          color: var(--color1-dark);
         }
         .name {
           margin: 12px 0;

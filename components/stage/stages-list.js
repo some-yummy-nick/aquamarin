@@ -99,23 +99,16 @@ const StagesList = ({ stages, currentStage, onStageClick }) => {
                       visibility: stage.floor == cstage ? 'visible' : 'hidden'
                     }}
                   >
-                    &nbsp;КВ.
                   </small>
                 </div>
                 {stage.floor != cstage && (
                   <div className="hover-marker">
                     {/* prettier-ignore */}
-                    <svg width="87" height="39" viewBox="0 0 87 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="0.5" y="1.48462" width="85.1026" height="36.7969" rx="18.3984" stroke="#FF8200"/>
-                    </svg>
                   </div>
                 )}
                 {stage.floor == cstage && (
                   <div className="current-marker">
                     {/* prettier-ignore */}
-                    <svg width="87" height="39" viewBox="0 0 87 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect y="0.950684" width="86.1026" height="37.7969" rx="18.8984" fill="#FF8200"/>
-                    </svg>
                   </div>
                 )}
               </div>
@@ -168,7 +161,9 @@ const StagesList = ({ stages, currentStage, onStageClick }) => {
           position: relative;
           &:hover {
             .hover-marker {
-              display: block;
+                 border-color:var(--color1-dark);
+                 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
             }
           }
           &.selected {
@@ -233,7 +228,8 @@ const StagesList = ({ stages, currentStage, onStageClick }) => {
           left: 0;
           position: absolute;
           pointer-events: none;
-          display: none;
+         border:1px solid transparent;
+         border-radius:4px;
         }
         .current-marker {
           top: 0;
@@ -242,6 +238,8 @@ const StagesList = ({ stages, currentStage, onStageClick }) => {
           left: 0;
           position: absolute;
           pointer-events: none;
+          background-color: var(--color1-dark);
+          border-radius:4px;
         }
       `}</style>
     </div>

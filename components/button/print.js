@@ -17,7 +17,7 @@ const Print = ({ onClick }) => {
           white-space: nowrap;
           color: #646464;
           &:hover {
-            color: var(--color9);
+            color: var(--color1-dark);
           }
         }
         svg {

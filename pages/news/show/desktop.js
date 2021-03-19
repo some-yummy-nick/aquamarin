@@ -69,12 +69,12 @@ const Show = ({ news }) => {
           .date {
             font-size: 14px;
             font-weight: 400;
-            color: var(--color9);
+            color: var(--color1-dark);
           }
           .name {
-            margin: 12px 0 15px 0;
+            margin: 20px 0 30px 0;
             font-weight: 500;
-            font-size: 36px;
+            font-size: 20px;
             line-height: 110%;
             text-transform: uppercase;
             color: #000;

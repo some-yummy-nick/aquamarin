@@ -12,7 +12,6 @@ const Button = props => {
     doubleline: props.doubleline,
     large: props.large,
     small: props.small,
-    large: props.large,
     curved: props.curved,
     transparent: props.transparent,
     secondary: props.secondary,
@@ -108,7 +107,7 @@ const Button = props => {
           color: white;
           background: var(--color1);
           &:hover {
-            background: var(--color1-dark);
+            background: var(--color9);
           }
           &.doubleline {
             border-top-color: var(--color2);
@@ -162,7 +161,7 @@ const Button = props => {
             font-size: 14px;
           }
           &.secondary {
-            color: var(--color1);
+            color: var(--color1-dark);
             &:hover {
               color: var(--color1-dark);
             }
@@ -276,27 +275,27 @@ const Button = props => {
           justify-content: center;
           color: #000;
           border: solid 2px black;
-          border-radius: 40px;
+          border-radius: 4px;
           box-sizing: border-box;
           &:hover {
-            color: var(--color1);
-            border-color: var(--color1);
+            color: var(--color1-dark);
+            border-color: var(--color1-dark);
           }
           &.selected {
             color: white;
-            background: var(--color1);
-            border-color: var(--color1);
+            background: var(--color1-dark);
+            border-color: var(--color1-dark);
           }
         }
         .outline.primary {
           height: 43px;
-          color: var(--color9);
+          color: var(--color1-dark);
           border-radius: 43px;
           background: none;
-          border: solid 1px var(--color9);
+          border: solid 1px var(--color1-dark);
           &:hover {
             color: white;
-            background: var(--color9);
+            background: var(--color1-dark);
           }
         }
       `}</style>

@@ -55,7 +55,7 @@ const RangeSlider = props => (
         display: none;
       }
       .with-gradusnik .input-range__track--active {
-        background: var(--color1);
+        background: var(--color1-dark);
       }
       .input-range__label {
         font-family: inherit;
