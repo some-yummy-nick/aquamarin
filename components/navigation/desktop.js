@@ -156,6 +156,13 @@ const DesktopNavigation = ({ closeMenu }) => {
                       </div>
                     </Link>
                   </div>
+                  <div className="item">
+                    <Link to="map">
+                      <div>
+                        <a onClick={e => navigate(e, 'map')}>Карта</a>
+                      </div>
+                    </Link>
+                  </div>
                 </div>
               </div>
               <div className="menu-col">

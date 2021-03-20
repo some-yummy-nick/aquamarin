@@ -70,3 +70,6 @@ module.exports = routes()
 
   // Отделка на заказ
   .add('otdelka', '/otdelka/:flat?', 'otdelka/index')
+
+    // Карта
+  .add('map', '/map', 'map/index')
