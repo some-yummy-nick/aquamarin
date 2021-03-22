@@ -76,7 +76,7 @@ const Notification = ({count, theme, menuOpened}) => (
         }
       }
       .count {
-        color: var(--color1);
+        color: #fff;
         font-size: 20px;
         font-weight: 500;
         top: 76%;

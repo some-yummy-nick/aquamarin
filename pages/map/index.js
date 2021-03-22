@@ -37,6 +37,7 @@ const Map = () => (
                     </div>
                 </div>
                 <div className="map-page__map">
+                    <img  className="map-page__back" src="/static/branding/map.png" alt="map"/>
                     <div className="map-page__baloon"/>
                 </div>
             </div>
@@ -115,28 +116,29 @@ const Map = () => (
                          }
                      }
                  }
-                   .map-page__map,
-                   .map-page__baloon{
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                       background-position: center;
-                   }
                    
                 .map-page__map{
                    position: relative;
                    z-index: -1;
-                   height:570px;
                    margin-top: 50px;
-                   background-image:url(static/branding/map.png);
+                }
+                
+                .map-page__back{
+                 width:100%;
+                 height:auto;
                 }
                 
                 .map-page__baloon{
                     position: absolute;
-                    top: 0;
-                    left: 0;
-                    width:100%;
-                    height:100%;
-                    background-image:url(static/branding/map-empty.png);
+                    z-index: 1;
+                    top: 20%;
+                    left: 20%;
+                    width:6.7%;
+                    height:16.3%;
+                    background-image:url(../static/branding/location.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
                 }
         `}</style>
         </div>
